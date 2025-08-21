@@ -12,6 +12,9 @@ By using the **SHAP (SHapley Additive exPlanations)** framework as a "universal 
 
 The full analysis, code, and visualizations are documented in the accompanying Jupyter Notebook: [`research.ipynb`](research.ipynb).
 
+The UCTH Breast Cancer Dataset used in this study is publicly available on Mendeley Data.
+**Download Link:** [**https://data.mendeley.com/datasets/63fpbc9cm4/2**](https://data.mendeley.com/datasets/63fpbc9cm4/2)
+
 ## Key Research Questions
 
 The analysis is structured around four key questions:
@@ -45,18 +48,6 @@ Based on these findings, we propose a prototype for a clinical decision-support 
 -   **Tier 2: Automated Safety Net (Black Box):** If the Decision Tree makes a prediction but the Neural Network's output falls within a predefined "uncertainty zone" (e.g., a probability between 0.25 and 0.75), the system automatically flags the case with an alert: **"ALERT: Discordant Prediction. High model uncertainty. Recommend expert clinical review."**
 
 This hybrid system provides clinicians with the speed of a simple tool for the majority of cases and a powerful, automated "second opinion" to catch the complex exceptions that often lead to diagnostic errors.
-
-## Repository Structure
-
-```
-.
-├── data/
-│   └── breast-cancer-dataset.csv  
-├── research_files/
-│   └── (Generated images and plots from the notebook)
-├── research.ipynb                 # The main Jupyter Notebook with all code and analysis.
-└── README.md                      # This file.
-```
 
 ## How to Use This Repository
 
